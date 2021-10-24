@@ -2,7 +2,7 @@ import "./App.css";
 import { Switch, Route, Link } from "react-router-dom";
 import Test from "./Pages/Test";
 import Home from "./Pages/Home";
-import Contact from "./Pages/Contact";
+import Fetch from "./Pages/Fetch";
 
 function App() {
   return (
@@ -10,13 +10,13 @@ function App() {
       <div className="navbar">
         <Link to="/">Home</Link>
         <Link to="/test">Test</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/fetch">Fetch</Link>
       </div>
 
       <Switch>
-        <Route path="/contact" component={Contact} />
-        <Route path="/test" component={Test} />
-        <Route path="/" component={Home} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/test" component={Test} />
+        <Route exact path="/fetch" component={Fetch} />
       </Switch>
     </div>
   );
