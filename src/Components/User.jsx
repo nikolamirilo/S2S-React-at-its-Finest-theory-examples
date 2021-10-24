@@ -62,6 +62,7 @@ const UserButton = styled.button`
   background-color: #292828;
   color: #fff;
   cursor: pointer;
+  margin-top: 1rem;
 `;
 
 export default User;
